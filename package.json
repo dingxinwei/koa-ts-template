@@ -1,0 +1,29 @@
+{
+  "name": "koa-ts-template",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "nodemon -e ts --exec ts-node -r tsconfig-paths/register app.ts",
+    "build": "tsc",
+    "prd": "pm2 start dist/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "koa": "^2.7.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0",
+    "mongoose": "^6.3.6"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.13.4",
+    "@types/koa-bodyparser": "^4.3.7",
+    "@types/koa-router": "^7.4.4",
+    "@types/node": "^17.0.42",
+    "nodemon": "^1.19.4",
+    "ts-node": "^10.8.1",
+    "tsconfig-paths": "^4.0.0",
+    "typescript": "^3.4.5"
+  }
+}
